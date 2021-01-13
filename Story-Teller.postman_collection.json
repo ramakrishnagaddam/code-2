@@ -1,0 +1,500 @@
+{
+	"info": {
+		"_postman_id": "3649b6a1-f568-4dc1-bef1-758676208c7e",
+		"name": "Story-Teller",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET-Stories",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://ec2-3-136-8-114.us-east-2.compute.amazonaws.com:3000/stories",
+					"protocol": "http",
+					"host": [
+						"ec2-3-136-8-114",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"stories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE-Stories",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"storyName\": \"RRR\",\n    \"storyDesc\": \"asdfasd dsaf sda\",\n    \"storyImage\": \"http://localhost:8080/story/img.jpg\",\n    \"credits\": \"Rama Krishna\",\n    \"storyURL\": \"http://localhost:8080/story/story.mp4\",\n    \"volume\": \"5eb4fb1ea3ac9f45307ffdd2\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-3-136-8-114.us-east-2.compute.amazonaws.com:3000/stories",
+					"protocol": "http",
+					"host": [
+						"ec2-3-136-8-114",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"stories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE-Stories",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"_id\": \"5eb53d39d2e0e23f5cd65f5f\",\n    \"storyName\": \"SRK\",\n    \"storyDesc\": \"asdfasd dsaf sda\",\n    \"storyImage\": \"http://localhost:8080/story/img.jpg\",\n    \"credits\": \"Rama Krishna\",\n    \"storyURL\": \"http://localhost:8080/story/story.mp4\",\n    \"volume\": \"5eb4fb1ea3ac9f45307ffdd2\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-3-136-8-114.us-east-2.compute.amazonaws.com:3000/stories",
+					"protocol": "http",
+					"host": [
+						"ec2-3-136-8-114",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"stories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET-Volume",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://ec2-3-136-8-114.us-east-2.compute.amazonaws.com:3000/volume",
+					"protocol": "http",
+					"host": [
+						"ec2-3-136-8-114",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"volume"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE-Volume",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"_id\": \"5eb4fb1ea3ac9f45307ffdd2\",\n    \"volumeName\": \"CDF\",\n    \"purchased\": false,\n    \"currency\": \"INR\",\n    \"cost\": 300,\n    \"category\": \"5eb4eddb81d1440a0083bb5f\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-3-136-8-114.us-east-2.compute.amazonaws.com:3000/volume",
+					"protocol": "http",
+					"host": [
+						"ec2-3-136-8-114",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"volume"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE-Volume",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"volumeName\": \"RED\",\n    \"purchased\": true,\n    \"currency\": \"INR\",\n    \"cost\": 300,\n    \"category\": \"5eb4eddb81d1440a0083bb5f\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-3-136-8-114.us-east-2.compute.amazonaws.com:3000/volume",
+					"protocol": "http",
+					"host": [
+						"ec2-3-136-8-114",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"volume"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET-Category",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://ec2-3-136-8-114.us-east-2.compute.amazonaws.com:3000/category",
+					"protocol": "http",
+					"host": [
+						"ec2-3-136-8-114",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE-Category",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"_id\": \"5eb4eddb81d1440a0083bb5f\",\n    \"categoryName\": \"ABC\",\n    \"categoryImageURL\": \"http://localhost:8080/DDD.jpg\",\n    \"categoryDesc\": \"ABC category\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-3-136-8-114.us-east-2.compute.amazonaws.com:3000/category",
+					"protocol": "http",
+					"host": [
+						"ec2-3-136-8-114",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE-Category",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"categoryName\": \"CCCC\",\n    \"categoryImageURL\": \"http://localhost:8080/DDD.jpg\",\n    \"categoryDesc\": \"CCC category\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-3-136-8-114.us-east-2.compute.amazonaws.com:3000/category",
+					"protocol": "http",
+					"host": [
+						"ec2-3-136-8-114",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET-ALL-Users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://ec2-3-136-8-114.us-east-2.compute.amazonaws.com:3000/users",
+					"protocol": "http",
+					"host": [
+						"ec2-3-136-8-114",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE-User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"credits\": 10\n}"
+				},
+				"url": {
+					"raw": "http://ec2-3-136-8-114.us-east-2.compute.amazonaws.com:3000/user",
+					"protocol": "http",
+					"host": [
+						"ec2-3-136-8-114",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE-User",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"emailID\": \"ramakrishnagaddam93@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-3-136-8-114.us-east-2.compute.amazonaws.com:3000/user",
+					"protocol": "http",
+					"host": [
+						"ec2-3-136-8-114",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User-Purchase",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"emailID\": \"ramakrishnagaddam93@gmail.com\",\n\t\"volume\": \"5eb4fb1ea3ac9f45307ffdd2\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-3-136-8-114.us-east-2.compute.amazonaws.com:3000/user-purchase",
+					"protocol": "http",
+					"host": [
+						"ec2-3-136-8-114",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"user-purchase"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET-User",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"emailID\": \"ramakrishnagaddam93@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-3-136-8-114.us-east-2.compute.amazonaws.com:3000/user",
+					"protocol": "http",
+					"host": [
+						"ec2-3-136-8-114",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
